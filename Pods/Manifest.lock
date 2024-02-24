@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.8.1)
+  - CoreStore (9.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - CoreStore (~> 9.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CoreStore
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  CoreStore: 6e7e2010ce7b8ad9cf7348c650020c3d7ea0afb2
+
+PODFILE CHECKSUM: 8f5124ef6bd6739f26b69577c3b3385aed3ec680
+
+COCOAPODS: 1.15.2
