@@ -27,9 +27,24 @@ class SplashScreenViewController: UIViewController {
                 return
             }
             
-            
-            
+            self.showSimpleAlert(title: "Failed", message: "Failed load data\nTry again later.")
         }
     }
     
+}
+
+extension UIViewController {
+    func showSimpleAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK",
+                                      style: .default,
+                                      handler: { _ in
+            alert.dismiss(animated: true)
+        }))
+
+        present(alert, animated: true, completion: nil)
+    }
 }

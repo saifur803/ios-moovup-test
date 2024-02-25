@@ -19,6 +19,7 @@ class MainTabViewController: UITabBarController {
         tabBar.tintColor = .systemBlue
         tabBar.unselectedItemTintColor = .systemGray
         tabBar.barTintColor = .white
+        tabBar.backgroundColor = .white
     }
     
     private func getChildViewControllers() -> [UIViewController] {

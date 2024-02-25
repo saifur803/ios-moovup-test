@@ -1,20 +1,32 @@
 PODS:
   - Alamofire (5.8.1)
   - CoreStore (9.2.0)
+  - GoogleMaps (8.4.0):
+    - GoogleMaps/Maps (= 8.4.0)
+  - GoogleMaps/Base (8.4.0)
+  - GoogleMaps/Maps (8.4.0):
+    - GoogleMaps/Base
+  - Kingfisher (7.11.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - CoreStore (~> 9.1)
+  - GoogleMaps (= 8.4.0)
+  - Kingfisher (~> 7.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CoreStore
+    - GoogleMaps
+    - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   CoreStore: 6e7e2010ce7b8ad9cf7348c650020c3d7ea0afb2
+  GoogleMaps: 8939898920281c649150e0af74aa291c60f2e77d
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
 
-PODFILE CHECKSUM: 8f5124ef6bd6739f26b69577c3b3385aed3ec680
+PODFILE CHECKSUM: e0225a4ab196641916701aace088d256d1e07cfa
 
 COCOAPODS: 1.15.2

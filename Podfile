@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '13.0'
+platform :ios, '14.0'
 workspace "MoovupTest"
 
 target 'MoovupTest' do
@@ -10,6 +10,8 @@ target 'MoovupTest' do
   
   pod "Alamofire", "~> 5.5"
   pod 'CoreStore', '~> 9.1'
+  pod 'GoogleMaps', '8.4.0'
+  pod 'Kingfisher', '~> 7.0'
 
 
 end
@@ -27,7 +29,7 @@ post_install do |installer|
     # Fix build issue in Xcode 14.3
     # Reference: https://stackoverflow.com/questions/75574268/missing-file-libarclite-iphoneos-a-xcode-14-3
     target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
     end
   end
 end

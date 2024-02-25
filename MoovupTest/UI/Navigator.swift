@@ -30,4 +30,11 @@ class Navigator {
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
     }
+    
+    func openMapDetailScreen(_ parentVC: UIViewController, people: People) {
+        guard let window = window else { fatalError("Navigator: No Window") }
+        let viewController = MapScreenViewController()
+        viewController.selectedPeople = people
+        parentVC.navigationController?.pushViewController(viewController, animated: true)
+    }
 }

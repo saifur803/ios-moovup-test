@@ -14,7 +14,7 @@
 		97178B3C2B89E7120007E1D8 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97178B3B2B89E7120007E1D8 /* MainTabView.swift */; };
 		97178B402B89EA4D0007E1D8 /* ListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97178B3F2B89EA4D0007E1D8 /* ListScreenViewController.swift */; };
 		97178B422B89EA5E0007E1D8 /* ListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97178B412B89EA5E0007E1D8 /* ListScreenView.swift */; };
-		97178B442B89EB470007E1D8 /* MapScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97178B432B89EB470007E1D8 /* MapScreenView.swift */; };
+		97178B442B89EB470007E1D8 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97178B432B89EB470007E1D8 /* DetailsView.swift */; };
 		97178B462B89EB850007E1D8 /* MapScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97178B452B89EB850007E1D8 /* MapScreenViewController.swift */; };
 		97A360A02B88ABD400AFCE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A3609F2B88ABD400AFCE36 /* AppDelegate.swift */; };
 		97A360A22B88ABD400AFCE36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A360A12B88ABD400AFCE36 /* SceneDelegate.swift */; };
@@ -37,7 +37,7 @@
 		97178B3B2B89E7120007E1D8 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		97178B3F2B89EA4D0007E1D8 /* ListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenViewController.swift; sourceTree = "<group>"; };
 		97178B412B89EA5E0007E1D8 /* ListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenView.swift; sourceTree = "<group>"; };
-		97178B432B89EB470007E1D8 /* MapScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenView.swift; sourceTree = "<group>"; };
+		97178B432B89EB470007E1D8 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		97178B452B89EB850007E1D8 /* MapScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenViewController.swift; sourceTree = "<group>"; };
 		97A3609C2B88ABD400AFCE36 /* MoovupTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoovupTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A3609F2B88ABD400AFCE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		97178B3E2B89EA240007E1D8 /* MapScreen */ = {
 			isa = PBXGroup;
 			children = (
-				97178B432B89EB470007E1D8 /* MapScreenView.swift */,
+				97178B432B89EB470007E1D8 /* DetailsView.swift */,
 				97178B452B89EB850007E1D8 /* MapScreenViewController.swift */,
 			);
 			path = MapScreen;
@@ -203,6 +203,7 @@
 				97A360992B88ABD400AFCE36 /* Frameworks */,
 				97A3609A2B88ABD400AFCE36 /* Resources */,
 				A2C80535C8627DFDFBAA93D6 /* [CP] Embed Pods Frameworks */,
+				26C9F2B985A69D8A0C6F6408 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +261,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26C9F2B985A69D8A0C6F6408 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoovupTest/Pods-MoovupTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoovupTest/Pods-MoovupTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoovupTest/Pods-MoovupTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2C80535C8627DFDFBAA93D6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,7 +336,7 @@
 				97178B422B89EA5E0007E1D8 /* ListScreenView.swift in Sources */,
 				97178B402B89EA4D0007E1D8 /* ListScreenViewController.swift in Sources */,
 				97A360B62B88BF6300AFCE36 /* SplashScreenViewController.swift in Sources */,
-				97178B442B89EB470007E1D8 /* MapScreenView.swift in Sources */,
+				97178B442B89EB470007E1D8 /* DetailsView.swift in Sources */,
 				97A360A22B88ABD400AFCE36 /* SceneDelegate.swift in Sources */,
 				97A360BA2B88C05300AFCE36 /* Navigator.swift in Sources */,
 			);
@@ -482,7 +500,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +531,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
